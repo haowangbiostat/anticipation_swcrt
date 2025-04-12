@@ -21,7 +21,7 @@ To reproduce the results, download this repo on a machine with R, run each of R 
  
 - Run [`figure_18.R`](code/figure_18.R) to get [`Figure 18`](figures/figure_HH_higher_order.pdf) in the main article.
   - Constant (true) treatment effect curves with their estimated effect curves under the HH working model.
-  - True model is HH-ANT with a higher-order anticipation effect.
+  - True model is HH-ANT with higher-order anticipation.
  
 ### Explore Coefficients Under Model Misspecification
 
@@ -35,7 +35,7 @@ To reproduce the results, download this repo on a machine with R, run each of R 
   - Coefficients under the HH or HH-ANT working model when the true model is ETI-ANT.
  
 - Run [`figure_17.R`](code/figure_17.R) to get [`Figure 17`](figures/figure_coeff_HH_higher_order.pdf) in the main article.
-  - Coefficients under the HH working model when the true model is HH-ANT with a higher-order anticipation effect.
+  - Coefficients under the HH working model when the true model is HH-ANT with higher-order anticipation.
  
 ### Compare Variances Under Different Models
 
@@ -71,13 +71,13 @@ The following scripts collect all the helper functions used in this repository. 
 
 - ```utils_ETI_power_std.R```: calculate power for the ETI and ETI-ANT models in standard stepped wedge cluster randomized trials.
 
-- ```utils_simulation_I.R```: helper functions for simulation I
+- ```utils_simulation_I.R```: helper functions for simulation I.
 
-- ```utils_simulation_II.R```: helper functions for simulation II
+- ```utils_simulation_II.R```: helper functions for simulation II.
 
-- ```utils_simulation_III.R```: helper functions for simulation III
+- ```utils_simulation_III.R```: helper functions for simulation III.
 
-- ```utils_simulation_IV.R```: helper functions for simulation IV
+- ```utils_simulation_IV.R```: helper functions for simulation IV.
 
-- ```utils_power.R```: helper functions for ```Trt.Ant.Power```
+- ```utils_power.R```: helper functions for ```Trt.Ant.Power```.
 
