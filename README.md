@@ -27,8 +27,20 @@ To reproduce the results, download this repo on a machine with R, run each of R 
 - Run [`figure_9.R`](code/figure_8.R) to get [`Figure 9`](figures/figure_coeff_HH_vs_HH-ANT.pdf) in the main article.
   - Coefficients under the HH or HH-ANT working model when the true model is ETI-ANT.
  
-### Compare variances under different working models
+### Compare variances under different models
 
+- Run [`figure_6.R`](code/figure_6.R) to get [`Figure 3`](figures/figure_variance_inflation.pdf) in the main article.
+  - Contour plots of variance inflation (HH-ANT vs HH or ETI-ANT vs ETI).
+ 
+### Compare power under different models
+
+- Run [`figure_10.R`](code/figure_10.R) to get [`Figure 10`](figures/figure_power_ratio_delta0.01.pdf) in the main article.
+- Run [`figure_11.R`](code/figure_11.R) to get [`Figure 11`](figures/figure_power_ratio_delta0.04.pdf) in the main article.
+- Run [`figure_12.R`](code/figure_12.R) to get [`Figure 12`](figures/figure_power_ratio_0.2.pdf) in the main article.
+- Run [`figure_13.R`](code/figure_13.R) to get [`Figure 13`](figures/figure_power_ratio_0.3.pdf) in the main article.
+- Run [`figure_14.R`](code/figure_14.R) to get [`Figure 14`](figures/figure_power_ratio_0.4.pdf) in the main article.
+  - Contourplots of power ratio between the treatment effect estimator from the HH-ANT and HH models.
+ 
 - Run [`figure_6.R`](code/figure_6.R) to get [`Figure 3`](figures/figure_variance_inflation.pdf) in the main article.
   - Contour plots of variance inflation (HH-ANT vs HH or ETI-ANT vs ETI)
  
