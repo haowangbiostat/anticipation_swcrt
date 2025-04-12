@@ -63,3 +63,21 @@ To reproduce the results, download this repo on a machine with R, run each of R 
 ### Trial planning software
 We provide an R function [`Trt.Ant.Power`](software/trial_planning.R) to compute statistical power for stepped wedge cluster randomized trials with or without anticipation.
 
+### Helper Functions Are Collected in [`code`](code) 
+
+The following scripts collect all the helper functions used in this repository. You do not need to separately run any of the scripts to replicate the results in the paper. 
+
+- ```utils_HH_power_std.R```: calculate power for the HH and HH-ANT models in standard stepped wedge cluster randomized trials.
+
+- ```utils_ETI_power_std.R```: calculate power for the ETI and ETI-ANT models in standard stepped wedge cluster randomized trials.
+
+- ```utils_simulation_I.R```: helper functions for simulation I
+
+- ```utils_simulation_II.R```: helper functions for simulation II
+
+- ```utils_simulation_III.R```: helper functions for simulation III
+
+- ```utils_simulation_IV.R```: helper functions for simulation IV
+
+- ```utils_power.R```: helper functions for ```Trt.Ant.Power```
+
