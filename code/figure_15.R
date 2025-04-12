@@ -1,5 +1,5 @@
-library(ggplot2)
 library(geomtextpath)
+library(ggplot2)
 library(gridExtra)
 library(scales)
 source("utils_ETI_power_std.R")
