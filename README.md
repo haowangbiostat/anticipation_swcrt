@@ -39,7 +39,7 @@ To reproduce the results, download this repo on a machine with R, run each of R 
  
 ### Compare Variances Under Different Models
 
-- Run [`figure_6.R`](code/figure_6.R) to get [`Figure 3`](figures/figure_variance_inflation.pdf) in the main article.
+- Run [`figure_6.R`](code/figure_6.R) to get [`Figure 6`](figures/figure_variance_inflation.pdf) in the main article.
   - Contour plots of variance inflation (HH-ANT vs HH or ETI-ANT vs ETI).
  
 ### Compare Power Under Different Models
