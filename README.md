@@ -34,11 +34,7 @@ To reproduce the results, download this repo on a machine with R, run each of R 
  
 ### Compare power under different models
 
-- Run [`figure_10.R`](code/figure_10.R) to get [`Figure 10`](figures/figure_power_ratio_delta0.01.pdf) in the main article.
-- Run [`figure_11.R`](code/figure_11.R) to get [`Figure 11`](figures/figure_power_ratio_delta0.04.pdf) in the main article.
-- Run [`figure_12.R`](code/figure_12.R) to get [`Figure 12`](figures/figure_power_ratio_0.2.pdf) in the main article.
-- Run [`figure_13.R`](code/figure_13.R) to get [`Figure 13`](figures/figure_power_ratio_0.3.pdf) in the main article.
-- Run [`figure_14.R`](code/figure_14.R) to get [`Figure 14`](figures/figure_power_ratio_0.4.pdf) in the main article.
+- Run [`figure_10.R`](code/figure_10.R), [`figure_11.R`](code/figure_11.R), [`figure_12.R`](code/figure_12.R), [`figure_13.R`](code/figure_13.R), [`figure_14.R`](code/figure_14.R) to get [`Figure 10`](figures/figure_power_ratio_delta0.01.pdf), [`Figure 11`](figures/figure_power_ratio_delta0.04.pdf), [`Figure 12`](figures/figure_power_ratio_0.2.pdf), [`Figure 13`](figures/figure_power_ratio_0.3.pdf), [`Figure 14`](figures/figure_power_ratio_0.4.pdf) in the main article, respectively.
   - Contourplots of power ratio between the treatment effect estimator from the HH-ANT and HH models.
  
 - Run [`figure_6.R`](code/figure_6.R) to get [`Figure 3`](figures/figure_variance_inflation.pdf) in the main article.
