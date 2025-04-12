@@ -89,10 +89,6 @@ The following scripts collect all the helper functions used in this repository. 
 
 - ```utils_power.R```: helper functions for trial planning software ```Trt.Ant.Power```.
 
-### Acknowledgments
-
-I would like to thank Fan Li, Xinyuan Chen, Monica Taljaard, Scott D. Halpern, Michael O. Harhay, Katherine R. Courtright for their useful comments and suggestions.
-
 ### Reference
 
 ```
