@@ -61,3 +61,5 @@ To reproduce the results, download this repo on a machine with R, run each of R 
 - Run [`simulation_IV.R`](code/simulation_IV.R) to get [`Table 4`](result/simulation_IV/table_4.R) in the main article.
 
 ### Trial planning software
+We provide an R function [Trt.Ant.Power`]() to compute statistical power for stepped wedge cluster randomized trials with/without anticipation.
+
