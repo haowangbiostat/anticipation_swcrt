@@ -79,5 +79,5 @@ The following scripts collect all the helper functions used in this repository. 
 
 - ```utils_simulation_IV.R```: helper functions for simulation IV
 
-- ```utils_power.R```: helper functions for ``Trt.Ant.Power```
+- ```utils_power.R```: helper functions for ```Trt.Ant.Power```
 
