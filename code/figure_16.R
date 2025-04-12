@@ -130,7 +130,7 @@ for (panel_lab in levels(df_all$panel_id)) {
   plots_list[[panel_lab]] <- p
 }
 
-pdf("figure_power_ratio_fixed_ratio.pdf", width = 12, height = 15, paper = "special")
+pdf("../figures/figure_power_ratio_fixed_ratio.pdf", width = 12, height = 15, paper = "special")
 grid.arrange(
   grobs = plots_list,
   nrow = 3, ncol = 2
