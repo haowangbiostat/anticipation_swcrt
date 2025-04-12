@@ -1,4 +1,4 @@
-#' Compute Statistical Power for Stepped‑Wedge Cluster Randomized Trials
+#' Compute Statistical Power for Stepped Wedge Cluster Randomized Trials
 #' with/without Anticipation
 #'
 #' `Trt.Ant.Power()` implements the closed‑form power calculation derived from
