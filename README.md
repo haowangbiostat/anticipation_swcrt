@@ -22,6 +22,9 @@ To reproduce the results, download this repo on a machine with R, run each of R 
 - Run [`figure_18.R`](code/figure_18.R) to get [`Figure 18`](figures/figure_HH_higher_order.pdf) in the main article.
   - Constant (true) treatment effect curves with their estimated effect curves under the HH working model.
   - True model is HH-ANT with higher-order anticipation.
+
+### Trial Planning Software
+We provide an R function [`Trt.Ant.Power`](software/trial_planning.R) to compute statistical power for stepped wedge cluster randomized trials with or without anticipation.
  
 ### Explore Coefficients Under Model Misspecification
 
@@ -60,9 +63,6 @@ To reproduce the results, download this repo on a machine with R, run each of R 
 
 - Run [`simulation_IV.R`](code/simulation_IV.R) to get [`Table 4`](result/simulation_IV/table_4.R) in the main article.
 
-### Trial planning software
-We provide an R function [`Trt.Ant.Power`](software/trial_planning.R) to compute statistical power for stepped wedge cluster randomized trials with or without anticipation.
-
 ### Helper Functions Are Collected in [`code`](code) 
 
 The following scripts collect all the helper functions used in this repository. You do not need to separately run any of the scripts to replicate the results in the paper. 
@@ -80,4 +80,3 @@ The following scripts collect all the helper functions used in this repository. 
 - ```utils_simulation_IV.R```: helper functions for simulation IV.
 
 - ```utils_power.R```: helper functions for trial planning software ```Trt.Ant.Power```.
-
