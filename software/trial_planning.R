@@ -28,7 +28,7 @@
 #'
 #' @return A scalar of class `"TrtAntPower"`, which contains the estimated power.
 #'   The object also carries attributes with the call parameters and the
-#'   computed variance, accessible via `attr(x, "details")`.
+#'   computed variance, accessible through `attr(x, "details")`.
 #' @export
 #'
 #' @examples
@@ -39,6 +39,17 @@
 #'               K        = 50,
 #'               rho      = 0.10,
 #'               sigma_sq = 1)
+#' Stepped Wedge CRT Power Analysis
+#'   Model            : ETI-ANT 
+#'   Treatment Effect : 0.299 
+#'   Clusters (I)     : 18 
+#'   Periods  (J)     : 7 
+#'   Individuals (K)  : 50 
+#'   ICC (rho)        : 0.1 
+#'   Sigma^2          : 1 
+#'   Alpha            : 0.05 
+#'   
+#' Estimated power    : 0.8012236 
 
 
 source("utils_power.R")
@@ -49,7 +60,7 @@ Trt.Ant.Power <- function(model, trt, I, J, K, rho, sigma_sq, alpha = 0.05) {
   scalar <- function(x) is.numeric(x) && length(x) == 1L
   stopifnot(
     scalar(trt), scalar(I) && I > 0,
-    scalar(J) && J > 0,    scalar(K) && K > 0,
+    scalar(J) && J > 0, scalar(K) && K > 0,
     scalar(rho) && rho >= 0 && rho < 1,
     scalar(sigma_sq) && sigma_sq > 0,
     scalar(alpha) && alpha > 0 && alpha < 1
@@ -58,10 +69,10 @@ Trt.Ant.Power <- function(model, trt, I, J, K, rho, sigma_sq, alpha = 0.05) {
   tau <- get_tau(rho, sigma_sq)
   
   builders <- list(
-    "HH"      = list(Z = build_Z_HH,  A = NULL,       f = general_HH),
-    "HH-ANT"  = list(Z = build_Z_HH,  A = build_A_HH, f = general_HH_ANT),
-    "ETI"     = list(Z = build_Z_ETI, A = NULL,       f = general_ETI),
-    "ETI-ANT" = list(Z = build_Z_ETI, A = build_A_ETI,f = general_ETI_ANT)
+    "HH"      = list(Z = build_Z_HH,  A = NULL,        f = general_HH),
+    "HH-ANT"  = list(Z = build_Z_HH,  A = build_A_HH,  f = general_HH_ANT),
+    "ETI"     = list(Z = build_Z_ETI, A = NULL,        f = general_ETI),
+    "ETI-ANT" = list(Z = build_Z_ETI, A = build_A_ETI, f = general_ETI_ANT)
   )
   
   b   <- builders[[model]]
@@ -97,3 +108,11 @@ print.TrtAntPower <- function(x, digits = getOption("digits"), ...) {
       formatC(unclass(x), digits = digits, format = "f"), "\n")
   invisible(x)
 }
+
+Trt.Ant.Power(model    = "ETI-ANT",
+              trt      = 0.299,
+              I        = 18,
+              J        = 7,
+              K        = 50,
+              rho      = 0.10,
+              sigma_sq = 1)
