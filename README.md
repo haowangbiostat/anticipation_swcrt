@@ -50,6 +50,16 @@ To reproduce the results, download this repo on a machine with R, run each of R 
 - Run [`figure_15.R`](code/figure_15.R) and [`figure_16.R`](code/figure_16.R) to get [`Figure 15`](figures/figure_power_ratio_fixed_Delta.pdf) and [`Figure 16`](figures/figure_power_ratio_fixed_ratio.pdf) in the main article, respectively.
   - Contour plots of power ratio between the treatment effect estimator from the ETI-ANT and ETI models.
  
-### Reproduce simulation studies
+### Reproduce Simulation Studies
+
+- Run [`simulation_I (type I).R`](code/simulation_I%20\(type%20I\).R) and [`simulation_I (power).R`](code/simulation_I%20\(power\).R) to get [`Table 7`](result/simulation_I%20\(type%20I\)/table_7.R) in the main article.
+
+- Run [`simulation_II.R`](code/simulation_II.R) to get [`Table 3`](result/simulation_II/table_3.R) in the main article.
+
+- Run [`simulation_III.R`](code/simulation_III.R) to get [`Table 8`](result/simulation_III/table_8.R) in the main article.
+
+- Run [`simulation_IV.R`](code/simulation_IV.R) to get [`Table 4`](result/simulation_IV/table_4.R) in the main article.
 
 ### Trial planning software
+We provide an R function [`Trt.Ant.Power`](software/trial_planning.R) to compute statistical power for stepped wedge cluster randomized trials with or without anticipation.
+
