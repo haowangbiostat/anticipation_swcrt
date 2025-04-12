@@ -54,6 +54,6 @@ To reproduce the results, download this repo on a machine with R, run each of R 
 
 - Run [`simulation_I (type I).R`](code/simulation_I%20\(type%20I\).R) and [`simulation_I (power).R`](code/simulation_I%20\(power\).R) to get [`Table 7`](result/simulation_I%20\(type%20I\)/table_7.R) in the main article.
 
-- Run [`simulation_II.R`](code/simulation_II.R) and [`simulation_I (power).R`](code/simulation_I%20\(power\).R) to get [`Table 3`](result/simulation_II) in the main article.
+- Run [`simulation_II.R`](code/simulation_II.R) to get [`Table 3`](result/simulation_II) in the main article.
 
 ### Trial planning software
