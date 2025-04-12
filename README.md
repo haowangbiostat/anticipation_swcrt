@@ -56,4 +56,8 @@ To reproduce the results, download this repo on a machine with R, run each of R 
 
 - Run [`simulation_II.R`](code/simulation_II.R) to get [`Table 3`](result/simulation_II) in the main article.
 
+- Run [`simulation_III.R`](code/simulation_III.R) to get [`Table 8`](result/simulation_III) in the main article.
+
+- Run [`simulation_IV.R`](code/simulation_IV.R) to get [`Table 4`](result/simulation_IV) in the main article.
+
 ### Trial planning software
