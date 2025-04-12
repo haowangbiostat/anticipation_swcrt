@@ -25,14 +25,17 @@ To reproduce the results, download this repo on a machine with R, run each of R 
  
 ### Explore coefficients under model misspecification
 
-- Run [`figure_3.R`](code/figure_5.R) to get [`Figure 3`](figures/figure_coeff_HH.pdf) in the main article.
+- Run [`figure_3.R`](code/figure_3.R) to get [`Figure 3`](figures/figure_coeff_HH.pdf) in the main article.
   - Coefficients under the HH working model when the true model is ETI.
   
 - Run [`figure_8.R`](code/figure_8.R) to get [`Figure 8`](figures/figure_coeff_HH-ANT.pdf) in the main article.
   - Coefficients under the HH-ANT working model when the true model is ETI.
  
-- Run [`figure_9.R`](code/figure_8.R) to get [`Figure 9`](figures/figure_coeff_HH_vs_HH-ANT.pdf) in the main article.
+- Run [`figure_9.R`](code/figure_9.R) to get [`Figure 9`](figures/figure_coeff_HH_vs_HH-ANT.pdf) in the main article.
   - Coefficients under the HH or HH-ANT working model when the true model is ETI-ANT.
+ 
+- Run [`figure_17.R`](code/figure_17.R) to get [`Figure 17`](figures/figure_coeff_HH_higher_order.pdf) in the main article.
+  - Coefficients under the HH working model when the true model is HH-ANT with a higher-order anticipation effect.
  
 ### Compare variances under different models
 
@@ -44,7 +47,7 @@ To reproduce the results, download this repo on a machine with R, run each of R 
 - Run [`figure_10.R`](code/figure_10.R), [`figure_11.R`](code/figure_11.R), [`figure_12.R`](code/figure_12.R), [`figure_13.R`](code/figure_13.R), [`figure_14.R`](code/figure_14.R) to get [`Figure 10`](figures/figure_power_ratio_delta0.01.pdf), [`Figure 11`](figures/figure_power_ratio_delta0.04.pdf), [`Figure 12`](figures/figure_power_ratio_0.2.pdf), [`Figure 13`](figures/figure_power_ratio_0.3.pdf), [`Figure 14`](figures/figure_power_ratio_0.4.pdf) in the main article, respectively.
   - Contour plots of power ratio between the treatment effect estimator from the HH-ANT and HH models.
  
-- Run [`figure_15.R`](code/figure_15.R) and [`figure_16.R`](code/figure_16.R) to get [`Figure 15`](figures/figure_power_ratio_fixed_Delta.pdf), [`Figure 16`](figures/figure_power_ratio_fixed_ratio.pdf) in the main article, respectively.
+- Run [`figure_15.R`](code/figure_15.R) and [`figure_16.R`](code/figure_16.R) to get [`Figure 15`](figures/figure_power_ratio_fixed_Delta.pdf) and [`Figure 16`](figures/figure_power_ratio_fixed_ratio.pdf) in the main article, respectively.
   - Contour plots of power ratio between the treatment effect estimator from the ETI-ANT and ETI models.
  
 ### Reproduce simulation studies
