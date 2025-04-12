@@ -28,7 +28,7 @@ overall_eff = 2
 # anticipation treatment effect
 ant_eff = 0
 
-# cluster-level heterogeneity alpha_i
+# cluster-level heterogeneity
 sigma_alpha = 0.141
 
 # true treatment effect

@@ -19,7 +19,7 @@ sd_epsilon = 0.5
 # anticipation treatment effect
 ant_eff = 0.5
 
-# cluster-level heterogeneity alpha_i
+# cluster-level heterogeneity
 sigma_alpha = 0.141
 
 # treatment effect
