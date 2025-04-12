@@ -11,10 +11,11 @@ To reproduce the results, download this repo on a machine with R, run each of R 
   - Four types of true treatment effect curves with their estimated effect curves under the HH working model.
 
 - Run [`figure_4.R`](code/figure_4.R) to get [`Figure 4`](figures/figure_ETI.pdf) in the main article
-  - Four types of true treatment effect curves with their estimated effect curves under the HH working model.
+  - Four types of true treatment effect curves with their estimated effect curves under the ETI working model.
 
-### Generate illustrative figures
-
+- Run [`figure_5.R`](code/figure_5.R) to get [`Figure 5`](figures/figure_HH-ANT.pdf) in the main article
+  - Four types of true treatment effect curves with their estimated effect curves under the HH-ANT working model.
+ 
 ### Reproduce simulation studies
 
 ### Trial planning software
