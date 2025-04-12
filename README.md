@@ -98,7 +98,7 @@ I would like to thank Fan Li, Xinyuan Chen, Monica Taljaard, Scott D. Halpern, M
 ```
 @article{Hao2025anticipation,
   title={On Anticipation Effect in Stepped Wedge Cluster Randomized Trials},
-  author={Wang, Hao and Chen, Xinyuan and Courtright, Katherine R. and Halpern, Scott D. and Harhay, Michael O. and Taljaard, Monica and Li Fan},
+  author={Wang, Hao and Chen, Xinyuan and Courtright, Katherine R. and Halpern, Scott D. and Harhay, Michael O. and Taljaard, Monica and Li, Fan},
   journal={arXiv preprint arXiv:coming soon!},
   year={2025}
 }
