@@ -52,7 +52,7 @@
 #' Estimated power    : 0.8012236 
 
 
-source("utils_power.R")
+source("../code/utils_power.R")
 Trt.Ant.Power <- function(model, trt, I, J, K, rho, sigma_sq, alpha = 0.05) {
   
   model <- match.arg(model, c("HH","HH-ANT","ETI","ETI-ANT"))
@@ -108,11 +108,3 @@ print.TrtAntPower <- function(x, digits = getOption("digits"), ...) {
       formatC(unclass(x), digits = digits, format = "f"), "\n")
   invisible(x)
 }
-
-Trt.Ant.Power(model    = "ETI-ANT",
-              trt      = 0.299,
-              I        = 18,
-              J        = 7,
-              K        = 50,
-              rho      = 0.10,
-              sigma_sq = 1)
