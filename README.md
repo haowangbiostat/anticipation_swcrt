@@ -9,12 +9,19 @@ To reproduce the results, download this repo on a machine with R, run each of R 
 
 - Run [`figure_2.R`](code/figure_2.R) to get [`Figure 2`](figures/figure_HH.pdf) in the main article.
   - Four types of true treatment effect curves with their estimated effect curves under the HH working model.
+  - True model is HH-ANT or ETI-ANT.
 
 - Run [`figure_4.R`](code/figure_4.R) to get [`Figure 4`](figures/figure_ETI.pdf) in the main article.
   - Four types of true treatment effect curves with their estimated effect curves under the ETI working model.
+  - True model is HH-ANT or ETI-ANT.
 
 - Run [`figure_5.R`](code/figure_5.R) to get [`Figure 5`](figures/figure_HH-ANT.pdf) in the main article.
-  - Four types of true treatment effect curves with their estimated effect curves under the HH-ANT working model.
+  - Four types of true treatment effect curves with their estimated effect curves under the HH or HH-ANT working model.
+  - True model is HH, HH-ANT, ETI, or ETI-ANT.
+ 
+- Run [`figure_18.R`](code/figure_18.R) to get [`Figure 5`](figures/figure_HH_higher_order.pdf) in the main article.
+  - Constant (true) treatment effect curves with their estimated effect curves under the HH working model.
+  - True model is HH-ANT with a higher-order anticipation effect.
  
 ### Explore coefficients under model misspecification
 
