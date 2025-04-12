@@ -76,6 +76,6 @@ p2 <- ggplot(subset(df_all, Q == 8), aes(x = phi, y = ell, z = value)) +
     axis.title.y = element_text(angle = 0, vjust = 0.5)
   )
 
-pdf("figure_coeff_HH_higher_order.pdf", width = 12.5, height = 6, paper = "special")
+pdf("../figures/figure_coeff_HH_higher_order.pdf", width = 12.5, height = 6, paper = "special")
 grid.arrange(p1, p2, ncol = 2)
 dev.off()

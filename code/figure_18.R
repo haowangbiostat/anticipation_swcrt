@@ -182,4 +182,4 @@ p <- ggplot(df_long, aes(x = Time, y = Effect, color = EffectType)) +
         strip.text = element_text(size = 12),
         strip.placement = "outside")
 
-ggsave(filename = "figure_HH_higher_order.pdf", plot = p, width = 12, height = 2.5)
+ggsave(filename = "../figures/figure_HH_higher_order.pdf", plot = p, width = 12, height = 2.5)
