@@ -10,6 +10,9 @@ To reproduce the results, download this repo on a machine with R, run each of R 
 - Run [`figure_2.R`](code/figure_2.R) to get [`Figure 2`](figures/figure_HH.pdf) in the main article
   - Four types of true treatment effect curves with their estimated effect curves under the HH working model.
 
+- Run [`figure_4.R`](code/figure_4.R) to get [`Figure 4`](figures/figure_ETI.pdf) in the main article
+  - Four types of true treatment effect curves with their estimated effect curves under the HH working model.
+
 ### Generate illustrative figures
 
 ### Reproduce simulation studies
