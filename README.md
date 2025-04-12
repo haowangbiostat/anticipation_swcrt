@@ -16,6 +16,10 @@ To reproduce the results, download this repo on a machine with R, run each of R 
 - Run [`figure_5.R`](code/figure_5.R) to get [`Figure 5`](figures/figure_HH-ANT.pdf) in the main article
   - Four types of true treatment effect curves with their estimated effect curves under the HH-ANT working model.
  
+### More insights on analytical results
+ 
 ### Reproduce simulation studies
+
+
 
 ### Trial planning software
