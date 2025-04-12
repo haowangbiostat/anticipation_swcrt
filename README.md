@@ -63,6 +63,8 @@ We provide an R function [`Trt.Ant.Power`](software/trial_planning.R) to compute
 
 - Run [`simulation_IV.R`](code/simulation_IV.R) to get [`Table 4`](result/simulation_IV/table_4.R) in the main article.
 
+- Simulation results are stored in ```result```. You do not need to re-run any of the simulation studies to replicate the results in the paper. 
+
 ### Helper Functions Are Collected in [`code`](code) 
 
 The following scripts collect all the helper functions used in this repository. You do not need to separately run any of the scripts to replicate the results in the paper. 
