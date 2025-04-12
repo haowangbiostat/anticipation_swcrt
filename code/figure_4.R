@@ -56,6 +56,7 @@ run_simulation <- function(true_effect, t_max, i_max) {
   return(data)
 }
 
+# true effect
 true_effect_constant <- rep(overall_eff, 2)
 true_effect_lagged <- c(0.5, 2)
 true_effect_curved <- c(1.75, 2)
@@ -68,6 +69,7 @@ true_effects_J3 <- list(
   'Partially convex' = true_effect_partially_convex
 )
 
+# true treatment effect
 true_effect_constant <- rep(overall_eff, 7)
 true_effect_lagged <- c(0.5, 0.5, rep(2, 5))
 true_effect_curved <- c(0.5, 1.0, 1.5, 1.75, 1.875, 1.9375, 2)
@@ -81,9 +83,9 @@ true_effects_J8 <- list(
 )
 
 n_sim <- 1000
-
 df_all <- data.frame()
 
+set.seed(123)
 for (t_max in c(3, 8)) {
   if (t_max == 3) {
     true_effects = true_effects_J3

@@ -61,7 +61,7 @@ run_simulation <- function(true_effect) {
   return(data)
 }
 
-# true effect
+# true treatment effect
 true_effect_constant <- rep(2, t_max - 1)
 true_effect_lagged <- c(0.5, 0.5, rep(2, t_max-3))
 true_effect_curved <- c(0.5, 1.0, 1.5, 1.75, 1.875, 1.9375, 2)
