@@ -1,9 +1,4 @@
-library(geomtextpath)
-library(ggplot2)
-library(gridExtra)
-library(scales)
-
-# variance functions (HH, HH-ANT, ETI, ETI-ANT)
+# variance of HH
 general_HH <- function(tau, sigma, I, J, K, Z) {
   rho <- tau^2 / (tau^2 + sigma^2)
   lambda1 <- 1 - rho
@@ -16,11 +11,12 @@ general_HH <- function(tau, sigma, I, J, K, Z) {
   
   numerator <- (sigma_t2 / K) * I * J * lambda1 * lambda2
   denominator <- ((U^2 + I * J * U - J * W1 - I * W2) * lambda2 -
-                  (U^2 - I * W2) * lambda1)
+                    (U^2 - I * W2) * lambda1)
   result <- numerator / denominator
   return(result)
 }
 
+# variance of HH-ANT
 general_HH_ANT <- function(tau, sigma, I, J, K, Z, A){
   rho <- tau^2 / (tau^2 + sigma^2)
   lambda1 <- 1 - rho
@@ -36,11 +32,12 @@ general_HH_ANT <- function(tau, sigma, I, J, K, Z, A){
   
   numerator <- I * J * lambda1 * lambda2 * sigma_t2 / K
   denominator <- lambda2 * (U^2 + I * J * U - J*W1 - I * W2 - 
-                 (J * W5^2)/(I^2 - W3)) + lambda1 * (I * W2 - U^2)
+                              (J * W5^2)/(I^2 - W3)) + lambda1 * (I * W2 - U^2)
   result <- numerator / denominator
   return(result)
 }
 
+# variance of ETI
 general_ETI <- function(tau, sigma, I, J, K, Z){
   rho <- tau^2 / (tau^2 + sigma^2)
   lambda1 <- 1 - rho
@@ -79,6 +76,7 @@ general_ETI <- function(tau, sigma, I, J, K, Z){
   return(result[1,1])
 }
 
+# variance of ETI-ANT
 general_ETI_ANT <- function(tau, sigma, I, J, K, Z, A){
   rho <- tau^2 / (tau^2 + sigma^2)
   lambda1 <- 1 - rho
@@ -126,17 +124,7 @@ general_ETI_ANT <- function(tau, sigma, I, J, K, Z, A){
   return(result[1,1])
 }
 
-# vary rho and J
-I <- 32
-K <- 100
-sigma <- 1
-
-Js <- c(5, 9, 17, 33)
-rhos <- seq(0, 0.25, length.out = 2000)
-
-df_all <- data.frame()
-
-# design matrix
+# create design matrix (HH)
 build_Z_HH <- function(I, J){
   nseq <- J - 1
   nclus_seq <- I / nseq
@@ -148,7 +136,7 @@ build_Z_HH <- function(I, J){
   return(Z_HH)
 }
 
-# design matrix
+# create design matrix (HH-ANT)
 build_A_HH <- function(I, J){
   nseq <- J - 1
   nclus_seq <- I / nseq
@@ -160,7 +148,7 @@ build_A_HH <- function(I, J){
   return(A_HH)
 }
 
-# design matrix
+# create design matrix (ETI)
 build_Z_ETI <- function(I, J){
   nseq <- J - 1
   nclus_seq <- I / nseq
@@ -180,7 +168,7 @@ build_Z_ETI <- function(I, J){
   return(Z_ETI)
 }
 
-# design matrix
+# create design matrix (ETI-ANT)
 build_A_ETI <- function(I, J){
   nseq <- J - 1
   nclus_seq <- I / nseq
@@ -192,92 +180,15 @@ build_A_ETI <- function(I, J){
   return(A_ETI)
 }
 
-for(J in Js){
-  Z_HH <- build_Z_HH(I, J)
-  A_HH <- build_A_HH(I, J)
-  Z_ETI <- build_Z_ETI(I, J)
-  A_ETI <- build_A_ETI(I, J)
-  
-  for(rho in rhos){
-    tau2 <- rho/(1 - rho)
-    tau <- sqrt(tau2)
-    
-    var_HH <- general_HH(tau, sigma, I, J, K, Z_HH)
-    var_HH_ANT <- general_HH_ANT(tau, sigma, I, J, K, Z_HH, A_HH)
-    var_ETI <- general_ETI(tau, sigma, I, J, K, Z_ETI)
-    var_ETI_ANT <- general_ETI_ANT(tau, sigma, I, J, K, Z_ETI, A_ETI)
-    
-    df_all <- rbind(df_all,
-                    data.frame(rho = rho,
-                               J = J,
-                               HH = var_HH,
-                               HH_ANT = var_HH_ANT,
-                               ETI = var_ETI,
-                               ETI_ANT = var_ETI_ANT))
-  }
+get_tau <- function(rho, sigma_sq){
+  return(sqrt(rho * sigma_sq / (1 - rho)))
 }
 
-df_all$ratio_HH <- df_all$HH_ANT/df_all$HH
-df_all$ratio_ETI <- df_all$ETI_ANT/df_all$ETI
-
-js <- sort(unique(df_all$J))
-rhos <- sort(unique(df_all$rho))
-
-ratioHH_mat <- matrix(NA, nrow = length(rhos), ncol = length(js))
-ratioETI_mat <- matrix(NA, nrow = length(rhos), ncol = length(js))
-
-for (i in seq_along(rhos)) {
-  for (j in seq_along(js)) {
-    ratioHH_mat[i, j] <- df_all$ratio_HH[
-      df_all$rho == rhos[i] & df_all$J == js[j]
-    ]
-    
-    ratioETI_mat[i, j] <- df_all$ratio_ETI[
-      df_all$rho == rhos[i] & df_all$J == js[j]
-    ]
-  }
+power_calculation <- function(est, var, alpha=0.05) {
+  # z value
+  Z_alpha <- qnorm(1 - alpha / 2)
+  # two-sided power
+  power <- pnorm(est / sqrt(var) - Z_alpha) + 
+    pnorm(-est / sqrt(var) - Z_alpha)
+  return(power)
 }
-
-p1 <- ggplot(df_all, aes(x = rho, y = J, z = ratio_HH)) +
-  geom_textcontour(
-    color = "blue",
-    size = 6,
-    breaks = c(1.9, 1.4, 1.2, 1.1),
-    linewidth = 0.8
-  ) +
-  labs(
-    x = expression(rho),
-    y = expression(J),
-    title = expression(paste("(a) Variance Inflation (HH-ANT vs HH)"))
-  ) +
-  scale_y_continuous(limits = c(5, 33), breaks = Js) + 
-  theme_bw() +
-  theme(
-    text = element_text(size = 15),
-    plot.title = element_text(hjust = 0.5),
-    axis.title.y = element_text(angle = 0, vjust = 0.5)
-  )
-
-p2 <- ggplot(df_all, aes(x = rho, y = J, z = ratio_ETI)) +
-  geom_textcontour(
-    color = "blue",
-    size = 6,
-    breaks = c(3.6, 1.9, 1.4, 1.2),
-    linewidth = 0.8
-  ) +
-  labs(
-    x = expression(rho),
-    y = expression(J),
-    title = expression(paste("(b) Variance Inflation (ETI-ANT vs ETI)"))
-  ) +
-  scale_y_continuous(limits = c(5, 33), breaks = Js) + 
-  theme_bw() +
-  theme(
-    text = element_text(size = 15),
-    plot.title = element_text(hjust = 0.5),
-    axis.title.y = element_text(angle = 0, vjust = 0.5)
-  )
-
-pdf("../figures/figure_variance_inflation.pdf", width = 12.5, height = 6, paper = "special")
-grid.arrange(p1, p2, ncol = 2)
-dev.off()
