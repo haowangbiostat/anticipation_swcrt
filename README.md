@@ -88,3 +88,18 @@ The following scripts collect all the helper functions used in this repository. 
 - ```utils_simulation_IV.R```: helper functions for simulation IV.
 
 - ```utils_power.R```: helper functions for trial planning software ```Trt.Ant.Power```.
+
+### Acknowledgments
+
+I would like to thank Fan Li, Xinyuan Chen, Monica Taljaard, Scott D. Halpern, Michael O. Harhay, Katherine R. Courtright for their useful comments and suggestions.
+
+### Reference
+
+```
+@article{Hao2025anticipation,
+  title={On Anticipation Effect in Stepped Wedge Cluster Randomized Trials},
+  author={Wang, Hao and Chen, Xinyuan and Courtright, Katherine R. and Halpern, Scott D. and Harhay, Michael O. and Taljaard, Monica and Li Fan},
+  journal={arXiv preprint arXiv:coming soon!},
+  year={2025}
+}
+```
