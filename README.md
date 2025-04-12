@@ -52,6 +52,6 @@ To reproduce the results, download this repo on a machine with R, run each of R 
  
 ### Reproduce Simulation Studies
 
-- Run [`simulation_I (power).R`](code/simulation_I (type I).R) to get [`Table 7`](result/simulation_I (type I)/table_7.R) in the main article.
+- Run [`simulation_I (power).R`](`code/simulation_I (type I).R`) to get [`Table 7`](`result/simulation_I (type I)/table_7.R`) in the main article.
 
 ### Trial planning software
