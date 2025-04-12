@@ -3,7 +3,7 @@ This repository contains the R code to reproduce the results presented in [On An
 
 ### Overview
 
-An illustration of a typical stepped wedge cluster randomized trials is given in Figure 1.
+An illustration of a typical stepped wedge cluster randomized trials (SW-CRTs) is given in Figure 1.
 
 ![Screenshot 2025-04-12 190455](https://github.com/user-attachments/assets/65cce508-c9c0-48c9-b569-2c6adabf725c)
 
@@ -30,7 +30,7 @@ To reproduce the results, download this repo on a machine with R, run each of R 
   - True model is HH-ANT with higher-order anticipation.
 
 ### Trial Planning Software
-We provide an R function [`Trt.Ant.Power`](software/trial_planning.R) to compute statistical power for stepped wedge cluster randomized trials with or without anticipation.
+We provide an R function [`Trt.Ant.Power`](software/trial_planning.R) to compute statistical power for SW-CRTs with or without anticipation.
  
 ### Explore Coefficients Under Model Misspecification
 
@@ -75,9 +75,9 @@ We provide an R function [`Trt.Ant.Power`](software/trial_planning.R) to compute
 
 The following scripts collect all the helper functions used in this repository. You do not need to separately run any of the scripts to replicate the results in the paper. 
 
-- ```utils_HH_power_std.R```: calculate power for the HH and HH-ANT models in standard stepped wedge cluster randomized trials.
+- ```utils_HH_power_std.R```: calculate power for the HH and HH-ANT models in standard SW-CRTs.
 
-- ```utils_ETI_power_std.R```: calculate power for the ETI and ETI-ANT models in standard stepped wedge cluster randomized trials.
+- ```utils_ETI_power_std.R```: calculate power for the ETI and ETI-ANT models in standard SW-CRTs.
 
 - ```utils_simulation_I.R```: helper functions for simulation I.
 
