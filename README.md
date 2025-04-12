@@ -27,7 +27,7 @@ To reproduce the results, download this repo on a machine with R, run each of R 
 - Run [`figure_9.R`](code/figure_8.R) to get [`Figure 9`](figures/figure_coeff_HH_vs_HH-ANT.pdf) in the main article.
   - Coefficients under the HH or HH-ANT working model when the true model is ETI-ANT.
  
-### Compare variances
+### Compare variances under different working models
 
 - Run [`figure_6.R`](code/figure_6.R) to get [`Figure 3`](figures/figure_variance_inflation.pdf) in the main article.
   - Contour plots of variance inflation (HH-ANT vs HH or ETI-ANT vs ETI)
