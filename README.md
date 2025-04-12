@@ -63,7 +63,7 @@ To reproduce the results, download this repo on a machine with R, run each of R 
 ### Trial planning software
 We provide an R function [`Trt.Ant.Power`](software/trial_planning.R) to compute statistical power for stepped wedge cluster randomized trials with or without anticipation.
 
-### Helper Functions are Collected in [`code`](code) 
+### Helper Functions Are Collected in [`code`](code) 
 
 The following scripts collect all the helper functions used in this repository. You do not need to separately run any of the scripts to replicate the results in the paper. 
 
