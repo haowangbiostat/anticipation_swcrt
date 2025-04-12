@@ -127,7 +127,7 @@ while (sim_count < n_sim) {
     }
     
     if (sim %% batch_size == 0) {
-      file_name <- sprintf("simulation_results_%04d_to_%04d.csv", sim - batch_size + 1, sim)
+      file_name <- sprintf("../result/simulation_II/simulation_results_%04d_to_%04d.csv", sim - batch_size + 1, sim)
       write.csv(temp, file_name, row.names = FALSE)
       temp <- data.frame(simulation = integer(),
                          model = character(),
