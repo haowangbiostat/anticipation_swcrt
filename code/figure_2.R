@@ -15,7 +15,7 @@ each <- 40
 # number of clusters
 i_max <- (t_max-1)*each
 
-# maximum number of exposure times observed
+# maximum number of exposure times
 expt_max <- t_max - 1
 
 # sd of individual level heterogeneity
@@ -30,7 +30,7 @@ sigma_alpha = 0.141
 # treatment effect
 overall_eff = 2
 
-# simulate the data
+# simulation
 run_simulation <- function(true_effect) {
   alphas <- rnorm(i_max, 0, sigma_alpha)
   
