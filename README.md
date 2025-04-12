@@ -1,12 +1,15 @@
 # On Anticipation Effect in Stepped Wedge Cluster Randomized Trials
 This repository contains the R code to reproduce the results presented in [On Anticipation Effect in Stepped Wedge Cluster Randomized Trials](https://github.com/haowangbiostat/anticipation_swcrt).
 
-### Quickstart
+### Overview
 
-To reproduce the results, download this repo on a machine with R, run each of R script in the [`code`](code) without modification, and then the results are saved in [`figures`](figures) or [`result`](result). All the R scripts can be run standalone. To run the R scripts, you do not need to set any pathnames; everything is relative. Only standard libraries (dplyr, geomtextpath, ggplot2, gridExtra, lme4, lmerTest, MASS,  RColorBrewer, reshape2, scales, showtext, tidyverse) are required in the R script.
+An illustration of a typical stepped wedge cluster randomized trials is given in Figure 1.
 
 ![Screenshot 2025-04-12 190455](https://github.com/user-attachments/assets/65cce508-c9c0-48c9-b569-2c6adabf725c)
 
+### Quickstart
+
+To reproduce the results, download this repo on a machine with R, run each of R script in the [`code`](code) without modification, and then the results are saved in [`figures`](figures) or [`result`](result). All the R scripts can be run standalone. To run the R scripts, you do not need to set any pathnames; everything is relative. Only standard libraries (dplyr, geomtextpath, ggplot2, gridExtra, lme4, lmerTest, MASS,  RColorBrewer, reshape2, scales, showtext, tidyverse) are required in the R script.
 
 ### Generate Illustrative Figures
 
