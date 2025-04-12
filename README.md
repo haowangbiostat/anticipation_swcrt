@@ -18,8 +18,14 @@ To reproduce the results, download this repo on a machine with R, run each of R 
  
 ### More insights on analytical results
 
-- Explore coefficients for the HH and HH-ANT models
-  - Run [`figure_3.R`](code/figure_5.R) to get [`Figure 3`](figures/figure_coeff_HH.pdf) in the main article
+- Run [`figure_3.R`](code/figure_5.R) to get [`Figure 3`](figures/figure_coeff_HH.pdf) in the main article
+  - Coefficients under the HH working model when the true model is ETI
+  - 
+- Run [`figure_8.R`](code/figure_8.R) to get [`Figure 8`](figures/figure_coeff_HH-ANT.pdf) in the main article
+  - Coefficients under the HH-ANT working model when the true model is ETI
+ 
+- Run [`figure_9.R`](code/figure_8.R) to get [`Figure 9`](figures/figure_coeff_HH_vs_HH-ANT.pdf) in the main article
+  - Coefficients under the HH or HH-ANT working model when the true model is ETI-ANT
  
 ### Reproduce simulation studies
 
