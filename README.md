@@ -7,7 +7,8 @@ To reproduce the results, download this repo on a machine with R, run each of R 
 
 ### Generate illustrative figures
 
-- Run [`figure_2`](code/figure_2.R) to
+- Run [`figure_2.R`](code/figure_2.R) to get Figure 2 in the main article
+  - Four types of true treatment effect curves with their estimated effect curves under the HH working model.
 
 ### Generate illustrative figures
 
