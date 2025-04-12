@@ -1,3 +1,4 @@
+# variance of HH
 standard_HH <- function(tau, sigma, I, J, K) {
   Q = J - 1
   
@@ -13,6 +14,7 @@ standard_HH <- function(tau, sigma, I, J, K) {
   return(result)
 }
 
+# variance of HH-ANT
 standard_HH_ANT <- function(tau, sigma, I, J, K) {
   Q = J - 1
   

@@ -1,6 +1,7 @@
 library(ggplot2)
 library(geomtextpath)
 library(gridExtra)
+library(scales)
 source("utils_HH_power_std.R")
 
 # set up
