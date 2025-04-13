@@ -32,7 +32,7 @@ To reproduce the results, please download this repo on a machine with R, run eac
 ### Trial Planning Software
 We provide an R function [`Trt.Ant.Power`](software/trial_planning.R) to compute statistical power for SW-CRTs with or without anticipation.
  
-### Explore Coefficients Under Model Misspecification
+### More Insights on Model Misspecification
 
 - Run [`figure_3.R`](code/figure_3.R) to get [`Figure 3`](figures/figure_coeff_HH.pdf) in the main article.
   - Coefficients under the HH working model when the true model is ETI.
@@ -46,12 +46,12 @@ We provide an R function [`Trt.Ant.Power`](software/trial_planning.R) to compute
 - Run [`figure_17.R`](code/figure_17.R) to get [`Figure 17`](figures/figure_coeff_HH_higher_order.pdf) in the main article.
   - Coefficients under the HH working model when the true model is HH-ANT with higher-order anticipation.
  
-### Compare Variances Under Different Models
+### Relative Efficiency
 
 - Run [`figure_6.R`](code/figure_6.R) to get [`Figure 6`](figures/figure_variance_inflation.pdf) in the main article.
   - Contour plots of variance inflation (HH-ANT vs HH or ETI-ANT vs ETI).
  
-### Compare Power Under Different Models
+### Statistical Power
 
 - Run [`figure_10.R`](code/figure_10.R), [`figure_11.R`](code/figure_11.R), [`figure_12.R`](code/figure_12.R), [`figure_13.R`](code/figure_13.R), [`figure_14.R`](code/figure_14.R) to get [`Figure 10`](figures/figure_power_ratio_delta0.01.pdf), [`Figure 11`](figures/figure_power_ratio_delta0.04.pdf), [`Figure 12`](figures/figure_power_ratio_0.2.pdf), [`Figure 13`](figures/figure_power_ratio_0.3.pdf), [`Figure 14`](figures/figure_power_ratio_0.4.pdf) in the main article, respectively.
   - Contour plots of power ratio between the treatment effect estimator from the HH-ANT and HH models.
@@ -92,7 +92,7 @@ The following scripts collect all the helper functions used in this repository. 
 ### Reference
 
 ```
-@article{Hao2025anticipation,
+@article{Wang2025anticipation,
   title={On Anticipation Effect in Stepped Wedge Cluster Randomized Trials},
   author={Wang, Hao and Chen, Xinyuan and Courtright, Katherine R. and Halpern, Scott D. and Harhay, Michael O. and Taljaard, Monica and Li, Fan},
   journal={arXiv preprint arXiv:coming soon!},
