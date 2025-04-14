@@ -29,7 +29,7 @@ To reproduce the results, please download this repo on a machine with R, run eac
   - Constant (true) treatment effect curves with their estimated effect curves under the HH working model.
   - True model is HH-ANT with higher-order anticipation.
 
-### Trial Planning Software
+### Trial Planning Software Is Collected in [`software`](software) 
 We provide an R function [`Trt.Ant.Power`](software/trial_planning.R) to compute statistical power for SW-CRTs with or without anticipation.
  
 ### More Insights on Model Misspecification
