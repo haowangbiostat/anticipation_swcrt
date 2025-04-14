@@ -1,5 +1,5 @@
 # On Anticipation Effect in Stepped Wedge Cluster Randomized Trials
-This repository contains the R code to reproduce the results presented in [On Anticipation Effect in Stepped Wedge Cluster Randomized Trials](https://github.com/haowangbiostat/anticipation_swcrt).
+This repository contains the R code to reproduce the results presented in [On Anticipation Effect in Stepped Wedge Cluster Randomized Trials]([https://github.com/haowangbiostat/anticipation_swcrt](https://arxiv.org/abs/2504.08158)).
 
 ### Overview
 
@@ -94,8 +94,8 @@ The following scripts collect all the helper functions used in this repository. 
 ```
 @article{Wang2025anticipation,
   title={On Anticipation Effect in Stepped Wedge Cluster Randomized Trials},
-  author={Wang, Hao and Chen, Xinyuan and Courtright, Katherine R. and Halpern, Scott D. and Harhay, Michael O. and Taljaard, Monica and Li, Fan},
-  journal={arXiv preprint arXiv:coming soon!},
+  author={Hao Wang and Xinyuan Chen and Katherine R. Courtright and Scott D. Halpern and Michael O. Harhay and Monica Taljaard and Fan Li},
+  journal={arXiv preprint arXiv:2504.08158},
   year={2025}
 }
 ```
