@@ -65,8 +65,8 @@ for (id in unique(df_all$panel_id)) {
   
   J_current <- df_sub$J[1]
   panel_title <- bquote(
-    .(id) ~ " " ~ Power[HH-ANT] / Power[HH] ~
-      "(" ~ J == .(J_current) ~ ", " ~ gamma / delta ~ " = " ~ .(gamma_over_delta) ~ ")"
+    .(id) ~ " " ~ Power^{"HH-ANT"} / Power^{"HH"} ~
+      "(" ~ J == .(J_current) ~ ", " ~ gamma^{"HH-ANT"} / delta^{"HH-ANT"} ~ " = " ~ .(gamma_over_delta) ~ ")"
   )
   
   p <- ggplot(df_sub, aes(x = rho, y = delta, z = ratio)) +
@@ -80,7 +80,7 @@ for (id in unique(df_all$panel_id)) {
     scale_y_continuous(limits = c(0, 0.1),  breaks = c(0.00, 0.02, 0.04, 0.06, 0.08, 0.10)) +
     labs(
       x = expression(rho),
-      y = expression(delta),
+      y = expression(delta^{"HH-ANT"}),
       title = panel_title
     ) +
     theme_bw() +
@@ -93,6 +93,6 @@ for (id in unique(df_all$panel_id)) {
   plots_list[[id]] <- p
 }
 
-pdf("../figures/figure_power_ratio_0.2.pdf", width = 12, height = 10, paper = "special")
+pdf("../figures/figure_power_ratio_0.2.pdf", width = 14, height = 14, paper = "special")
 grid.arrange(grobs = plots_list, ncol = 2)
 dev.off()

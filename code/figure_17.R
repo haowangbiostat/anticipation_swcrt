@@ -46,7 +46,7 @@ p1 <- ggplot(subset(df_all, Q == 4), aes(x = phi, y = ell, z = value)) +
   labs(
     x = expression(phi),
     y = expression("\u2113"),
-    title = expression(paste("(a) The Coefficient of ", gamma, " (Q = 4)"))
+    title = expression(paste("(a) ", omega[list(HH)]^{"HH-ANT, \u2113"}, " (Q = 4)"))
   ) +
   scale_y_continuous(breaks = 1:4) +
   theme_bw() +
@@ -66,7 +66,7 @@ p2 <- ggplot(subset(df_all, Q == 8), aes(x = phi, y = ell, z = value)) +
   labs(
     x = expression(phi),
     y = expression("\u2113"),
-    title = expression(paste("(b) The Coefficient of ", gamma, " (Q = 8)"))
+    title = expression(paste("(b) ", omega[list(HH)]^{"HH-ANT, \u2113"}, " (Q = 8)"))
   ) +
   scale_y_continuous(breaks = 1:8) +
   theme_bw() +

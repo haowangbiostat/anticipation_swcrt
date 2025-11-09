@@ -74,7 +74,7 @@ true_effects <- list(
   'Third Order' = true_effect_constant
 )
 
-n_sim <- 1000
+n_sim <- 2000
 df_all <- data.frame()
 
 set.seed(123)

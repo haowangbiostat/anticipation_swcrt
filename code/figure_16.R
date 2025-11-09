@@ -95,8 +95,8 @@ for (panel_lab in levels(df_all$panel_id)) {
   }
   
   panel_title <- bquote(
-    .(panel_lab) ~ " " ~ Power[ETI-ANT] / Power[ETI] ~
-      "(" ~ J == .(J_cur) ~ ", " ~ gamma / Delta ~ " = " ~ .(gamma_ratio) ~ ")"
+    .(panel_lab) ~ " " ~ Power^{"ETI-ANT"} / Power^{"ETI"} ~
+      "(" ~ J == .(J_cur) ~ ", " ~ gamma^{"ETI-ANT"} / Delta^{"ETI-ANT"} ~ " = " ~ .(gamma_ratio) ~ ")"
   )
   
   p <- ggplot(df_sub, aes(x = rho, y = Delta, z = ratio)) +
@@ -117,7 +117,7 @@ for (panel_lab in levels(df_all$panel_id)) {
     ) +
     labs(
       x = expression(rho),
-      y = expression(Delta),
+      y = expression(Delta^{"ETI-ANT"}),
       title = panel_title
     ) +
     theme_bw() +
@@ -130,7 +130,7 @@ for (panel_lab in levels(df_all$panel_id)) {
   plots_list[[panel_lab]] <- p
 }
 
-pdf("../figures/figure_power_ratio_fixed_ratio.pdf", width = 12, height = 15, paper = "special")
+pdf("../figures/figure_power_ratio_fixed_ratio.pdf", width = 14, height = 14, paper = "special")
 grid.arrange(
   grobs = plots_list,
   nrow = 3, ncol = 2

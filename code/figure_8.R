@@ -49,7 +49,7 @@ generate_plot <- function(data, y_label, y_limits, facet_labels) {
 }
 
 p1 <- generate_plot(data_combined1, 
-                    y_label = expression("Coefficients of " * delta), 
+                    y_label = expression(psi[list({"HH-ANT"})]^{ETI} * (j)), 
                     y_limits = c(-0.5, 1),
                     facet_labels = c("3" = "(a) Q = 3", "5" = "(b) Q = 5", "7" = "(c) Q = 7"))
 

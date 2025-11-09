@@ -57,11 +57,11 @@ generate_plot <- function(data, y_label, y_limits, facet_labels) {
     guides(color = guide_legend(nrow = 1))
 }
 
-p1 <- generate_plot(df_HH, y_label = expression("Coefficients of " * delta ~ "(HH)"), 
+p1 <- generate_plot(df_HH, y_label = expression(pi[list(HH)]^{"ETI-ANT"} * (j)), 
                     y_limits = c(-1, 2),
                     facet_labels = c("3" = "(a) Q = 3", "5" = "(b) Q = 5", "7" = "(c) Q = 7"))
 
-p2 <- generate_plot(df_HH_ANT, y_label = expression("Coefficients of " * delta ~ "(HH-ANT)"), 
+p2 <- generate_plot(df_HH_ANT, y_label = expression(pi[list("HH-ANT")]^{"ETI-ANT"} * (j)), 
                     y_limits = c(-1, 2),
                     facet_labels = c("3" = "(d) Q = 3", "5" = "(e) Q = 5", "7" = "(f) Q = 7"))
 
