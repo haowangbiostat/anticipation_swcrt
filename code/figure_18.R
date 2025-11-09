@@ -11,7 +11,7 @@ n_per <- 50
 t_max <- 8
 
 # number of clusters per sequence
-each <- 40
+each <- 4
 
 # number of clusters
 i_max <- (t_max - 1) * each
