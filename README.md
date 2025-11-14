@@ -43,7 +43,7 @@ We provide an R function [`Trt.Ant.Power`](software/trial_planning.R) to compute
 - Run [`figure_9.R`](code/web_figure_2.R) to get [`Figure 9`](figures/figure_coeff_HH_vs_HH-ANT.pdf) in the main article.
   - Coefficients under the HH or HH-ANT working model when the true model is ETI-ANT.
  
-- Run [`figure_17.R`](code/web_figure_10.R) to get [`Figure 17`](figures/figure_coeff_HH_higher_order.pdf) in the main article.
+- Run [`web_figure_10.R`](code/web_figure_10.R) to get [`Web Figure 10`](figures/figure_coeff_HH_higher_order.pdf) in the main article.
   - Coefficients under the HH working model when the true model is HH-ANT with higher-order anticipation.
  
 ### Relative Efficiency
