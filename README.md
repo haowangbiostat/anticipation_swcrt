@@ -53,10 +53,10 @@ We provide an R function [`Trt.Ant.Power`](software/trial_planning.R) to compute
  
 ### Statistical Power
 
-- Run [`web_figure_3.R`](code/web_figure_3.R), [`web_figure_4.R`](code/web_figure_4.R), [`web_figure_5.R`](code/web_figure_5.R), [`web_figure_6.R`](code/web_figure_6.R), [`web_figure_7.R`](code/web_figure_7.R) to get [`Figure 10`](figures/figure_power_ratio_delta0.01.pdf), [`Figure 11`](figures/figure_power_ratio_delta0.04.pdf), [`Figure 12`](figures/figure_power_ratio_0.2.pdf), [`Figure 13`](figures/figure_power_ratio_0.3.pdf), [`Figure 14`](figures/figure_power_ratio_0.4.pdf) in the main article, respectively.
+- Run [`web_figure_3.R`](code/web_figure_3.R), [`web_figure_4.R`](code/web_figure_4.R), [`web_figure_5.R`](code/web_figure_5.R), [`web_figure_6.R`](code/web_figure_6.R), [`web_figure_7.R`](code/web_figure_7.R) to get [`Web Figure 3`](figures/figure_power_ratio_delta0.01.pdf), [`Web Figure 4`](figures/figure_power_ratio_delta0.04.pdf), [`Web Figure 5`](figures/figure_power_ratio_0.2.pdf), [`Web Figure 6`](figures/figure_power_ratio_0.3.pdf), [`Web Figure 7`](figures/figure_power_ratio_0.4.pdf) in the main article, respectively.
   - Contour plots of power ratio between the treatment effect estimator from the HH-ANT and HH models.
  
-- Run [`web_figure_8.R`](code/web_figure_8.R) and [`web_figure_9.R`](code/web_figure_9.R) to get [`Figure 15`](figures/figure_power_ratio_fixed_Delta.pdf) and [`Figure 16`](figures/figure_power_ratio_fixed_ratio.pdf) in the main article, respectively.
+- Run [`web_figure_8.R`](code/web_figure_8.R) and [`web_figure_9.R`](code/web_figure_9.R) to get [`Web Figure 8`](figures/figure_power_ratio_fixed_Delta.pdf) and [`Web Figure 9`](figures/figure_power_ratio_fixed_ratio.pdf) in the main article, respectively.
   - Contour plots of power ratio between the treatment effect estimator from the ETI-ANT and ETI models.
  
 ### Reproduce Simulation Studies
