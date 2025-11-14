@@ -37,10 +37,10 @@ We provide an R function [`Trt.Ant.Power`](software/trial_planning.R) to compute
 - Run [`figure_3.R`](code/figure_3.R) to get [`Figure 3`](figures/figure_coeff_HH.pdf) in the main article.
   - Coefficients under the HH working model when the true model is ETI.
   
-- Run [`figure_8.R`](code/web_figure_1.R) to get [`Figure 8`](figures/figure_coeff_HH-ANT.pdf) in the main article.
+- Run [`web_figure_1.R`](code/web_figure_1.R) to get [`Web Figure 1`](figures/figure_coeff_HH-ANT.pdf) in the main article.
   - Coefficients under the HH-ANT working model when the true model is ETI.
  
-- Run [`figure_9.R`](code/web_figure_2.R) to get [`Figure 9`](figures/figure_coeff_HH_vs_HH-ANT.pdf) in the main article.
+- Run [`web_figure_2.R`](code/web_figure_2.R) to get [`Web Figure 2`](figures/figure_coeff_HH_vs_HH-ANT.pdf) in the main article.
   - Coefficients under the HH or HH-ANT working model when the true model is ETI-ANT.
  
 - Run [`web_figure_10.R`](code/web_figure_10.R) to get [`Web Figure 10`](figures/figure_coeff_HH_higher_order.pdf) in the main article.
