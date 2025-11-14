@@ -25,7 +25,7 @@ To reproduce the results, please download this repo on a machine with R, run eac
   - Four types of true treatment effect curves with their estimated effect curves under the HH or HH-ANT working model.
   - True model is HH, HH-ANT, ETI, or ETI-ANT.
  
-- Run [`figure_18.R`](code/web_figure_11.R) to get [`Figure 18`](figures/figure_HH_higher_order.pdf) in the main article.
+- Run [`web_figure_11.R`](code/web_figure_11.R) to get [`Web_Figure 11`](figures/figure_HH_higher_order.pdf) in the main article.
   - Constant (true) treatment effect curves with their estimated effect curves under the HH working model.
   - True model is HH-ANT with higher-order anticipation.
 
